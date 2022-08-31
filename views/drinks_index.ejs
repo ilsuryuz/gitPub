@@ -8,6 +8,22 @@
 </head>
 <body>
     <h1>Welcome to gitPub!</h1>
+    <ul>
+        <!-- capitalize first letter
+            ref: https://www.freecodecamp.org/news/javascript-capitalize-first-letter-of-word/  
+            -->
+        <% for(let i =0; i< allDrinks.length; i++) { 
+            const word = allDrinks[i].name;
+            const firstLetter = word.charAt(0);
+            const firstLetterCap = firstLetter.toUpperCase();
+            const remainingLetters = word.slice(1);
+            const capWord = firstLetterCap + remainingLetters;
+            %>
+            <li>
+                <a href="/drinks/<%=i%>"><%=capWord%></a>
+            </li>
+        <% } %>
+    </ul>
     <style>
         body {
             color: blanchedalmond;
