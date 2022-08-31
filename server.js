@@ -24,3 +24,15 @@ app.get("/drinks/:id", (req, res) => {
     })
 })
 
+app.get("/foods", (req, res) => {
+    res.render("food_index.ejs", {
+        allFoods: foods,
+    })
+})
+
+app.get("/foods/:id", (req, res) =>{
+    res.render("food_show.ejs", {
+        food: foods[req.params.id],
+    })
+})
+
