@@ -1,0 +1,24 @@
+{
+  "name": "gitpub",
+  "version": "1.0.0",
+  "description": "gitPub Lab",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilsuryuz/gitPub.git"
+  },
+  "author": "Ilsur Yuz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilsuryuz/gitPub/issues"
+  },
+  "homepage": "https://github.com/ilsuryuz/gitPub#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}
