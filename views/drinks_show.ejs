@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title><%=drink.name[0].toUpperCase() + drink.name.slice(1, drink.name.length)%></title>
 </head>
 <body>
     <h1>At foo bar</h1>
-    <h2><%=drink.name%></h2>
+    <h2><%=drink.name[0].toUpperCase() + drink.name.slice(1, drink.name.length)%></h2>
     <img src="<%=drink.image%>.jpg">
     <h3>Price: <%=drink.price%></h3>
     <a href="/drinks/">Back to menu</a>

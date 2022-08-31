@@ -1,5 +1,6 @@
 const express = require("express");
-const drinks = require("./models/drinks")
+const drinks = require("./models/drinks");
+const foods = require("./models/food");
 const app = express();
 const port = 3000;
 
